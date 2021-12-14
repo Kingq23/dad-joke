@@ -16,3 +16,6 @@ function joke() {
 
 });
 }
+window.addEventListener('load', (event) => {
+  joke()
+});
