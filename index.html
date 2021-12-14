@@ -8,7 +8,7 @@
   </head>
   <body>
     <center>
-    <button onclick="joke()">click here for joke</button>
+    <button onclick="joke()">click here for jokes</button>
     <p id="joke"><p>
     </center>
     <script>
@@ -16,7 +16,7 @@
   const response = await fetch('https://icanhazdadjoke.com/');
   const myJson = await response.json(); //extract JSON from the http response
   // do something with myJson
-  document.getElementById("joke").innerHTML = myJson.joke[0]
+  document.getElementById("joke").innerHTML = myJson.joke
   }
     
     </script>
